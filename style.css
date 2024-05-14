@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    line-height:1;
+    /* background-color: #eceff8; */
+    overflow-y:scroll;
+    font-size: 24px;
+    margin: 0;
+}
+
+.sidebar{
+    height: 100%;
+    width: 8em;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    color: black;
+    transition: 0.5s;
+    padding-top: 0px;
+    background-color:#f27405;
+}
+
+
+.container{
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.header2{
+    margin-top: 0.5em;
+    padding: 0.7em;
+    padding-bottom: 0;
+}
+
+.container .buttons{
+    margin-left: 20px;
+    margin-top: 0;
+}
+
+.container .buttons .form-group label{
+    font-size: .7em;
+}
+
+.container .buttons .form-group input{
+    width: 15%;
+}
+
+.content{
+    font-size: .6em;
+}
+
+
+
+
+@media only screen and (max-width:768px) {
+    
+
+    
+}
+
+@media only screen and (max-width:440px) {
+    .sidebar{
+        width:0em;
+    }
+    
+    .container{
+        margin-left: 0px;
+        padding: 10px;
+        font-size: .6em;
+        overflow-x: scroll;
+    }
+
+    .container .buttons .form-group input{
+        width: 100px;
+        height: 20px;
+        font-size: 12px;
+    }
+}
